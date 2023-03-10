@@ -1,53 +1,105 @@
-# Website quản lý thu nhập cá nhân cho Cán bộ và Giảng viên UDCK
-## I.Giới thiệu
-Trong quá trình chuyển đổi số thì việc tính lương và quản lý thu nhập của nhân viên trong các cơ quan, tổ chức doanh nghiệp hiện đang là vấn đề rất được quan tâm. Hiện tại trên thị trường đã xuất hiện các phần mềm quản lý cho doanh nghiệp vừa và nhỏ và có các công cụ hỗ trợ tính lương như ECount, FastWork và Base HMR+… Tuy nhiên theo tìm hiểu, các cơ quan – tổ chức và doanh nghiệp chỉ có 2 hướng quản lý thu nhập:
-- Thứ nhất là quản lý lương bằng phần mềm Excel, sau đó gửi bảng lương cho ngân hàng và ngân hàng sẽ gửi tin nhắn SMS hoặc thông qua ứng dụng của ngân hàng về số tiền lương nhận được đến từng CB-GV.
-- Thứ hai là quản lý, tính thu nhập của từng nhân viên thông qua phần mềm chuyên dụng nhưng không thể gửi chi tiết lương đến cho từng nhân viên mà vẫn chỉ gửi bảng lương đó cho bên ngân hàng để ngân hàng chi trả lương.
-<br/>
- Còn tại Phân hiệu ĐHĐN tại Kon Tum, các nhân viên Phòng KH-TC cũng đang quản lý lương của các CB-GV theo hướng thứ nhất đó là quản lý bằng file excel, và nhận thông báo lương qua tin nhắn từ ngân hàng. Tuy nhiên theo phương thức quản lý này sẽ gặp rất nhiều bất cập như sau: CB-GV không thể theo dõi được chi tiết bảng lương của bản thân bao gồm những khoản gì và có sự thay đổi bất thường như thế nào cũng như gặp bất tiện trong việc thống kê tổng thu nhập theo tháng hoặc theo năm. Hơn thế nữa nếu việc tính lương có sai sót hàng loạt thì CB-GV sẽ gửi rất nhiều phản hồi đến hộp thư email của CB-GV và việc phản hồi, giải thích các thắc mắc này sẽ gây tốn rất nhiều thời gian cho Phòng KH-TC.<br/>
-Do đó, nhóm chúng em chọn đề tài “Website quản lý thu nhập cá nhân cho Cán bộ-Giảng viên UDCK” để nghiên cứu nhằm hỗ trợ Nhà trường hoàn thiện hơn chương trình chuyển đổi số và phù hợp với xu hướng của thời đại, cũng như giúp CB-GV và nhân viên Phòng KH-TC giảm thiểu thời gian và công sức trong việc quản lý thu nhập tại UDCK.
-
-## What up
+# Website quản lý điểm rèn luyện sinh viên tại Phân hiệu Đại học Đà Nẵng tại Kon Tum (Training Point Management)
+## I. Giới thiệu
+Tôi hiện tại là sinh viên năm cuối của Phân hiệu Đại học Đà Nẵng tại Kon Tum và đang mong muốn tạo ra một ứng dụng công nghệ thông tin có thể làm đơn giản hóa các công việc dành cho sinh viên và nhà trường. Và thông qua trải nghiệm trong suốt thời gian qua, cảm thấy việc chấm điểm rèn luyện theo cách thủ công của nhà trường còn quá nhiều khó khăn và bất tiện, vì vậy tôi quyết định sẽ xây dựng một trang website có thể đơn giản hóa việc quản lý và chấm điểm rèn luyện cho UDCK. </br>
+Theo như tìm hiểu, hiện tại Phân hiệu ĐHĐN tại Kon Tum hiện tại đang quản lý điểm rèn luyện thủ công bằng file Excel, Google Sheets và phiếu đánh giá điểm rèn luyện. Cuối mỗi học kỳ nhà trường đều tổ chức đánh giá điểm rèn luyện cho sinh viên thông qua phiếu chấm điểm rèn luyện, phiếu hướng dẫn chấm điểm rèn luyện và danh sách sinh viên tham gia hoạt động/nhận khen thưởng/bị vi phạm, sinh viên tự chấm điểm rèn luyện sau đó tổng hợp lại toàn bộ phiếu và gửi cho nhà trường. Tuy nhiên phương pháp quản lý và chấm điểm theo cách này còn nhiều hạn chế như: sinh viên phải chấm điểm thủ công, phải đối chiếu nhiều dữ liệu lại với nhau mới hoàn thiện đủ được toàn bộ các mục điểm; các cán bộ lớp và cố vấn học tập phải rà soát lại phiếu đánh giá điểm rèn luyện thủ công cho tất cả từng thành niên trong lớp; các file excel được lưu trữ rời rạc và không đồng bộ với nhau…</br>
+Xuất phát từ những lý do đó, đề tài **“Xây dựng website quản lý điểm rèn luyện sinh viên UDCK”** được nghiên cứu và phát triển nhằm hỗ trợ Nhà trường hoàn thiện hơn chương trình chuyển đổi số và phù hợp với xu hướng của thời đại, cũng như giúp sinh viên và nhà trường có một hệ giống giúp tự động hóa công tác quản lý và chấm điểm rèn luyện.
 ## II. Công nghệ sử dụng
-| ![image](https://user-images.githubusercontent.com/15710296/194469617-7c49e50d-2b07-46f7-bf4f-7236e6a0eec2.png) |
+Một yếu tố quan trọng để một nhà phát triển website hay phần mềm có thể phát triển và sử dụng được hệ thống của họ trong công việc thực thế là cần phải có một giải pháp thiết kế phù hợp và hiệu quả nhất. Qua quá trình tìm hiểu về thực trạng quản lý thu nhập cũng như là tự nghiên cứu và tìm kiếm các tài liệu liên quan trên Internet, nhóm đã đưa ra được một mô hình giải pháp thiết kế hệ thống website như hình dưới:
+| ![image](https://user-images.githubusercontent.com/15710296/194341290-069ad606-81da-4201-9718-53021973e7b9.png) |
 |:--:|
-| *Sơ đồ mô tả công nghệ sử dụng* |
+| *Mô hình giải pháp thiết kế được sử dụng trong hệ thống* |
 ## III. Các chức năng
-| STT |	Chức năng |	Vấn đề được giải quyết |
-|:-:| - | - |
-| 1 |	Xây dựng CSDL lưu trữ thu nhập cá nhân | Có một CSDL trung tâm lưu trữ dữ liệu thu nhập. Không cần phải quản dữ liệu một cách rời rạc bằng file excel và không thống nhất |
-| 2 |	Xây dựng chức năng xem lương |	CB-GV chủ động xem lương mà không cần yêu cầu bộ phận KHTC |
-| 3	| Xây dựng chức năng nhập lương	| Nhanh chóng nhập dữ liệu lương từ file excel vào hệ thống quản lý mà không cần nhập bằng tay |
-| 4	| Tự động gửi thông báo lương qua email	| Gửi thông tin lương cho CB-GV tự động, nhanh chóng, tiện lợi, tránh thiếu hoặc sai xót |
-| 5	| Xây dựng chức năng phản hồi lương	| Phản hồi trực tiếp và nhanh chóng các xai sót |
-| 6	| Xây dựng chức năng thông báo điểu chỉnh thu nhập |	CB-GV nắm rõ được sự thay đổi thông tin lương và tăng tính minh bạch |
-| 7	| Thống kê lương |	Phân tích và thống kê được lương theo tháng/năm hoặc khoảng thời gian tùy chọn |
-## IV. Hình ảnh Demo
-### 1. Chức năng của Cán bộ - Giảng viên
-#### a. Trang chủ
-Trang chủ khi Cán bộ - Giảng viên truy cập vào tài khoản, giao diện hiển thị thông tin tháng lương và bài đăng thông báo mới nhất
-| ![image](https://user-images.githubusercontent.com/15710296/194470300-14652e9b-cf01-474f-ab6c-cc3e3c862214.png) |
-|:-:|
-| *Trang chủ* |
-#### b. Xem và phản hồi lương
-Xem chi tiết khoản lương trong một tháng
-| <img src="https://user-images.githubusercontent.com/15710296/194470459-dcf0e652-500f-4cbd-8abd-d2f64d0b7c5d.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194470512-8a6677c5-6eec-40e6-bc37-b5d365d9f7e4.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194470549-6d1e7c94-6e9d-403a-95b3-e7e5b1b96e4a.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194470562-64c5fa88-03fa-4136-9aac-55a08cebaf07.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194470579-10f77ea3-9769-416b-be56-bc6cd94bbc4b.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194470592-11481265-896c-4aae-9176-cc86c659517a.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194470602-809a7a4f-f508-48e0-8dc2-babbf7649394.png" width="50%" /> |
-|:-:|
-| *Xem và phản hồi lương* |
-### 2. Chức năng của quản trị viên
-#### a. Quản lý lương
-Quản lý thông tin lương các tháng của Cán bộ - Giảng viên
-| <img src="https://user-images.githubusercontent.com/15710296/194471187-2ea3fb70-40bb-4b75-8d9b-abe49369ab40.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194471201-701fac25-6696-413a-bc5d-67a6178e747c.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194471214-f5e47ced-751f-4327-ab51-a9d2f40b320a.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194471225-9358fe27-ca12-488c-a1a8-852eb21fad48.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194471231-84ede23b-f04c-407e-b5a4-f1fd2a2e38d7.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194471243-e25efed8-6d7f-4fb3-a8fe-e0d2b0ac5170.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194471248-e7ea5c6a-6f13-4078-a366-0ccc7bdc911b.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194471262-8fc2bf44-1369-4ab9-9e43-c7465da925cf.png" width="50%" /> |
-|:-:|
-| *Giao diện quản lý lương* |
-#### b. Nhập lương
-Nhập thông tin lương từ file Excel nhanh chóng
-| <img src="https://user-images.githubusercontent.com/15710296/194471330-9d4e087a-45ec-4260-9c57-05e31fb0cf03.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194471344-295f9748-5ff0-4050-98cf-3204cceaee9e.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194471358-754170eb-b027-4029-9248-766244d7f57b.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194471391-8cb9dfbe-eef7-4871-afcb-76e45c7078c1.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194471398-96105d6b-93c7-4457-b3b6-3005b92fa080.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194471432-aab28404-1704-4e6f-93c2-f3061836b6e5.png" width="50%" /> |
-|:-:|
-| *Giao diện nhập lương* |
-#### c. Quản lý bài đăng thông báo
-Quản lý các bài đăng thông báo
-| <img src="https://user-images.githubusercontent.com/15710296/194471446-ab92666d-658a-4761-ada8-bcbb6aaf8471.png" width="50%" /><img src="https://user-images.githubusercontent.com/15710296/194471453-5fd62d7f-3c62-4c31-b1a0-00f1c9114425.png" width="50%" /> |
+### 1. Tác nhân sử dụng
+Thông qua nghiên cứu và phân tích thì chương trình chia thành 3 đối tượng sử dụng hệ thống website như sau:
+- Người quản trị website (QTV): Người quản trị website hay còn gọi là Admin, chính là người quản trị toàn bộ hệ thống website, họ có quyền truy cập đầy đủ các chức năng và thông tin trong hệ thống. Đối tượng sử dụng có thể là chuyên viên quản trị website, giám đốc hoặc phó giám đốc;
+- Người nhập liệu (NNL): Chức năng chính của người nhập liệu là quản lý các hoạt động được giới hạn trong quyền hạn cho phép. Người nhập liệu có thể điểm danh sinh viên tham gia hoạt động cho từng nhóm phòng ban mà họ được truy cập. Đối tượng sử dụng là các cán bộ cấp khoa, các phòng ban…;
+- Sinh viên (SV): Sinh viên có quyền truy cập để xem điểm rèn luyện của cá nhân. Đối với cán bộ lớp có quyền cập nhật đánh giá hoạt động cho sinh viên trong lớp khi hệ thống mở quyền truy cập.
+### 2. Các chức năng trong hệ thống
+| STT | Tác nhân | Chức năng | Mô tả |
+| - | - | - | - |
+| 1 | QTV | Quản lý tài khoản | Quản lý các tài khoản đăng nhập của hệ thống website cho 3 tác nhân là Admin, Người nhập liệu và Sinh viên. |
+| 2 | QTV/NNL | Quản lý hoạt động/khen thưởng/vi phạm | Quản lý các hoạt động có trong một học kỳ, mỗi học kỳ có danh sách hoạt động/khen thưởng/vi phạm khác nhau. |
+| 3 | QTV/NNL | Quản lý đánh giá sinh viên (điểm danh sinh viên, khen thưởng sinh viên, đánh vi phạm…) | Quản lý đánh giá các hoạt động mà sinh viên tham gia, các khen thưởng và vi phạm. |
+| 4 | QTV Cấu hình chấm rèn luyện sinh viên | Ở mỗi học kỳ có các hoạt động và các tiêu chí đánh giá để tính điểm rèn luyện cho sinh viên. Để đánh giá được đúng theo yêu cầu của nhà trường, hệ thống cần phải cấu hình để đánh giá chính xác và chấm điểm rèn luyện chính xác. |
+| 5 | QTV Nhập/xuất dữ liệu | Giúp cho QTV nhập và xuất dữ liệu về hoạt động, đánh giá và học kỳ nhanh chóng. |
+| 6 | QTV Quản lý nhóm | Quản lý các nhóm khoa/nhóm phòng ban và phân quyền truy cập hệ thống cho mỗi nhóm. |
+| 6 | QTV/NNL/SV Xem thống kê | Thống kê số lượng và xếp loại sinh viên, theo lớp khoa và khoá. |
+| 7 | QTV Quản lý năm học | Quản lý các năm học. |
+| 8 | QTV Quản lý học kỳ | Quản lý các học kỳ. |
+| 9 | QTV Quản lý khoa | Quản lý các khoa. |
+| 10 | QTV Quản lý ngành học | Quản lý các ngành học.
+| 11 | QTV Quản lý lớp | Quản lý các lớp. |
+| 12 | SV | Xem điểm rèn luyện | Sinh viên có thể xem điểm rèn luyện cá nhân từng học kỳ trên hệ thống website, hệ thống sẽ hiển thị bảng đánh giá điểm theo từng tiêu chí và tổng điểm rèn luyện. |
+| 13 | SV | In phiếu điểm rèn luyện | In phiếu phiếu điểm rèn luyện khi sinh viên cần in phiếu điểm để dùng cho nhiều mục đích khác. |
+### 3. Sơ đồ lớp
+| ![image](https://user-images.githubusercontent.com/15710296/194336510-90565362-da58-4fe3-9e77-28194bb71c9e.png) |
 |:--:|
-| *Giao diện quản lý bài đăng thông báo* |
-#
+| *Sơ đồ lớp* |
+### 4. Lược đồ CSDL
+| ![image](https://user-images.githubusercontent.com/15710296/194336750-b7bdc07a-9617-4ce0-b140-4d47eee84a6e.png) |
+|:--:|
+| *Lược đồ CSDL* |
+## IV. Hình ảnh demo sản phẩm
+### 1. Chức năng của sinh viên
+#### a. Thông tin sinh viên
+Hiển thị thông tin của tài khoản sinh viên đang đăng nhập
+| ![student 1](https://user-images.githubusercontent.com/15710296/194337924-2d80e351-bef7-4069-99d6-e6c9887b2c95.png) |
+|:--:|
+| *Thông tin tài khoản sinh viên đăng nhập* |
+#### b. Xem đánh giá kết quả rèn luyện của sinh viên mỗi học kỳ
+| ![student_2](https://user-images.githubusercontent.com/15710296/194339699-184d9392-3470-40ca-9af9-ade0633fd190.png) |
+|:--:|
+| *Lựa chọn học kỳ* |
+| ![student_3](https://user-images.githubusercontent.com/15710296/194339780-5e72a5f1-03e8-48c5-95a4-772a98a565ef.png) |
+| *Giao diện xem đánh giá kết quả rèn luyện* |
+#### c. In phiếu điểm rèn luyện
+| ![student_4](https://user-images.githubusercontent.com/15710296/194339859-53c47461-1d9a-4dcf-b11f-fd8e929fda9b.png) |
+|:--:|
+| *Phiếu điểm rèn luyện* |
+#### d. Xem danh sách hoạt động mỗi học kỳ
+| ![student_5](https://user-images.githubusercontent.com/15710296/194339937-134da3e1-110f-4dfe-ba3e-d31e7c75963e.png) |
+|:--:|
+| *Xem danh sách hoạt động mỗi học kỳ* |
+#### e. Sinh viên tự đánh giá
+Ở mỗi hoạt động, nếu người quản trị hoặc tài khoản quản lý hoạt động đó mở cho phép chỉnh sửa hoạt động trong một khoảng thời gian giới hạn thì sinh viên có thể tự đánh giá điểm rèn luyện cá nhân.
+| ![student_6](https://user-images.githubusercontent.com/15710296/194339964-6ae12c02-499f-4923-a9f6-0575227ec2f8.png) |
+|:--:|
+| *Tự đánh giá điểm rèn luyện* |
+### 2. Chức năng của người nhập liệu
+#### a. Xem danh sách tài khoản sinh viên.
+| ![importer_1](https://user-images.githubusercontent.com/15710296/194340073-63fc5ca3-324e-44a9-9261-9d22e41fd1a0.png) |
+|:--:|
+| *Danh sách tài khoản sinh viên* |
+#### Quản lý hoạt động
+| ![importer_2](https://user-images.githubusercontent.com/15710296/194340117-856fb137-43da-41b0-84c5-a44a3c53f3d9.png) |
+|:--:|
+| *Xem danh sách thông tin hoạt động* |
+| ![importer_3](https://user-images.githubusercontent.com/15710296/194340134-26a2423f-9489-45ba-b828-bbf43d0f6cc0.png) |
+| *Thêm hoạt động mới vào hệ thống* |
+#### Xem cấu hình chấm điểm rèn luyện tự động
+| ![importer_5](https://user-images.githubusercontent.com/15710296/194340200-013aff0f-324b-4c05-8c24-ffa4167dfcad.png) |
+|:--:|
+| *Xem cấu hình chấm điểm rèn luyện* |
+### 3. Chức năng của người quản trị
+#### a. Quản lý phòng ban
+| ![admin_1](https://user-images.githubusercontent.com/15710296/194340260-9bb28719-c309-458e-85fe-8cb5f7a59481.png) |
+|:--:|
+| *Giao diện xem danh sách phòng ban* |
+| ![admin_2](https://user-images.githubusercontent.com/15710296/194340282-82a4838b-d08c-4632-915b-e783574ae3aa.png) |
+| *Giao diện nhóm con của một phòng ban* |
+| ![admin_3](https://user-images.githubusercontent.com/15710296/194340362-55cdabdc-b728-434c-97f6-44d367bd8501.png) |
+| *Thêm phòng ban mới* |
+#### b. Quản lý tài khoản
+| ![admin_4](https://user-images.githubusercontent.com/15710296/194340406-829c7e69-8df7-4e7b-8d3f-2f57435ee6cc.png) |
+|:--:|
+| *Trang xem danh sách tài khoản* |
+#### c. Tuỳ chỉnh cấu hình chấm điểm rèn luyện tự động.
+| ![admin_5](https://user-images.githubusercontent.com/15710296/194340467-6b6909a4-0672-4b7b-92d0-df7357b1f89f.png) |
+|:--:|
+| *Cấu hình điểm rèn luyện tự động* |
+| ![admin_6](https://user-images.githubusercontent.com/15710296/194340482-2ab258b4-2e06-4125-a986-6fe2df0c04ed.png) |
+| *Chỉnh sửa tiêu chí đánh giá* |
+| ![admin_7](https://user-images.githubusercontent.com/15710296/194340500-209bd130-c6d3-479e-8cbc-458458753aed.png) |
+| *Thêm hoạt động vào tiêu chí* |
+
+Để xem đầy đủ báo cáo phần mềm vui lòng truy cập file [BaoCao_TPManagement.pdf](https://github.com/jennydo2000/tp-management/blob/master/BaoCao_PTManager.pdf)
